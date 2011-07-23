@@ -6,7 +6,7 @@ CodeMountain::Application.routes.draw do
   root :to => 'pages#landing'
   controller :pages do
     get 'landing'
-    get 'task'
+    get 'do_task'
     get 'complete'
     get 'help'
     get 'finish'

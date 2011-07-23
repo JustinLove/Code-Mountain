@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Codemountain::Application.load_tasks
+CodeMountain::Application.load_tasks

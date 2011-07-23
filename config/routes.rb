@@ -11,6 +11,7 @@ CodeMountain::Application.routes.draw do
     get 'help'
     get 'finish'
     get 'about'
+    get 'faq'
   end
 
 end

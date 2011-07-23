@@ -15,4 +15,9 @@ class TasksController < ApplicationController
 
   def show
   end
+
+  def update
+    task.save!
+    redirect_to task_path(task.next)
+  end
 end

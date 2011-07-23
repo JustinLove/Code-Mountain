@@ -15,6 +15,6 @@ CodeMountain::Application.routes.draw do
     get 'start'
   end
 
-  resources :tasks, :only => [:create, :show]
+  resources :tasks, :only => [:create, :show, :update]
 
 end

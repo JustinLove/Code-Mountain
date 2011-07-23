@@ -14,4 +14,6 @@ CodeMountain::Application.routes.draw do
     get 'faq'
   end
 
+  resources :tasks, :only => [:create]
+
 end

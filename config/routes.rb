@@ -10,6 +10,7 @@ CodeMountain::Application.routes.draw do
     get 'complete'
     get 'help'
     get 'finish'
+    get 'about'
   end
 
 end

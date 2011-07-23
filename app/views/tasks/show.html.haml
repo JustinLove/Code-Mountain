@@ -1,0 +1,11 @@
+%div
+  %h2 Progress
+
+%div
+  %h2 #{task.title}
+  %p
+    = formatted_text(task.detail)
+  = form_tag do
+    = submit_tag "Finish"
+    = submit_tag "I Don't Understand"
+    = submit_tag "I'm Stuck"

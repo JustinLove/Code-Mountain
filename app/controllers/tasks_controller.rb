@@ -1,6 +1,5 @@
 class TasksController < ApplicationController
   expose(:next_task) do
-    p params
     if params[:previous_task]
       Task.find(params[:previous_task]).next
     else
@@ -8,7 +7,12 @@ class TasksController < ApplicationController
     end
   end
 
+  expose(:task)
+
   def create
-    redirect_to task_path
+    redirect_to task_path(next_task)
+  end
+
+  def show
   end
 end

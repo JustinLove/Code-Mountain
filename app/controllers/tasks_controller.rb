@@ -9,6 +9,6 @@ class TasksController < ApplicationController
   end
 
   def create
-    redirect_to task_path
+    redirect_to tasks_path(next_task)
   end
 end

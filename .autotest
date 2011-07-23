@@ -1,0 +1,12 @@
+require 'autotest/growl'
+
+Autotest.add_hook :initialize do |autotest|
+  files = %r{^spec/requests/.*_spec\.rb}
+  autotest.add_mapping(files) do
+    autotest.files_matching(files)
+  end
+  %w{.svn .hg .git vendor webrat.log}.each {|exception|
+    autotest.add_exception(exception)
+  }
+end
+

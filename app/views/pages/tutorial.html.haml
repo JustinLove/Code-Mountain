@@ -1,11 +1,11 @@
 #main-header
   .container
-    #logo
+    #logo_2
       = link_to image_tag( '/images/codemt_logo.png'), root_path
     %nav
-      %ul.header_links
-      = link_to "Back to Dashboard" , dashboard_path
-      = link_to image_tag('imstuck.png'), get_help_path, :class => 'help'
-      = link_to image_tag('finish_task.png'), congrats_path
+      %ul.header_links_2
+        = link_to image_tag('leftbracket_red.png'), dashboard_path
+        = link_to image_tag('imstuck.png'), get_help_path, :class => 'help'
+        = link_to image_tag('finish_task.png'), congrats_path
 .container
   %img{:alt => "Welcome to Code Mountain", :src => "images/rails_for_zombies_02.png"}/

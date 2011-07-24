@@ -8,6 +8,25 @@ body {
 	background: #444444;
 }
 
+.tutorial ul {
+	margin-left: 10px;
+}
+
+.header_links_2 {
+	bottom: 7px;
+   	left: 100px;
+   	position: relative;
+}
+
+#logo {
+	position: relative;
+	top: 10px;
+}
+
+#logo_2 {
+	position: relative;
+	top: 11px;
+}
 
 .container {
     margin-left: auto;

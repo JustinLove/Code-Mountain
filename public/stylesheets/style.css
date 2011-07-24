@@ -86,3 +86,11 @@ nav {
   width: 100%;
   background-color: white;
 }
+
+/* ========= Start Task Page ========== */
+
+#start_task {
+	bottom: 150px;
+	left: 184px;
+	position: relative;
+}

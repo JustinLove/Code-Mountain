@@ -16,3 +16,18 @@ h2 {
 h3 {
 	font-size: 21px;
 }
+
+#tutorialheader {
+  height: 2em;
+  border-bottom: solid black 0.1em;
+}
+
+#tutorialheader form {
+  display: inline;
+}
+
+#tutorialbody {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}

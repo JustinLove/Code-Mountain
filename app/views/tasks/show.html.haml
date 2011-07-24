@@ -18,7 +18,7 @@
     %p
       = formatted_text(task.detail)
     %p.link
-      = link_to task.link, task.link
+      = link_to task.link, tutorial_task_path(task)
     = form_for task do |f|
       = f.hidden_field :status, :value => 'complete'
       = f.submit "Finish"

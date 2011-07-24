@@ -17,7 +17,11 @@ CodeMountain::Application.routes.draw do
     get 'contact'
   end
 
-  resources :tasks, :only => [:create, :show, :update]
+  resources :tasks, :only => [:create, :show, :update] do
+    member do
+      get :tutorial
+    end
+  end
 
   resources :lessons, :only => [:index]
 

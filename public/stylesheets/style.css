@@ -1,7 +1,11 @@
 body {
-  background: url(../images/full_bg.png) repeat;
+  background: url(../images/new_bg.png) repeat;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.dashboard, .tutorial, .start, .congrats {
+	background: #444444;
 }
 
 
@@ -92,5 +96,20 @@ nav {
 #start_task {
 	bottom: 150px;
 	left: 184px;
+	position: relative;
+}
+
+#task_1 {
+	bottom: 726px;
+	float: right;
+	left: 15px;
+	position: relative;
+}
+
+/* ===== Continue Task ========== */
+
+#continue {
+	bottom: 200px;
+	left: 275px;
 	position: relative;
 }

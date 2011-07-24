@@ -15,6 +15,8 @@ CodeMountain::Application.routes.draw do
     get 'start'
     get 'tutorial'
     get 'contact'
+    get 'dashboard'
+    get 'congrats'
   end
 
   resources :tasks, :only => [:create, :show, :update] do

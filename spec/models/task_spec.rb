@@ -9,5 +9,11 @@ describe Task do
     its(:next) {subject.lesson.should == lesson2}
     its(:title) {should == lesson1.title}
     its(:detail) {should == lesson1.detail}
+    its(:complete?) {should be_false}
+
+    describe 'complete task' do
+      subject {Task.new(:lesson => lesson1, :status => 'complete')}
+      its(:complete?) {should be_true}
+    end
   end
 end

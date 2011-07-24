@@ -6,10 +6,19 @@ describe Lesson do
   end
 
   describe 'instance methods' do
-    Given(:lesson) {Lesson.new}
+    Given!(:lesson) {Factory(:lesson)}
     subject {lesson}
     it {should be}
-    its(:create_task) {should be_kind_of(Task)}
-    its(:create_task) {subject.lesson.should == lesson}
+
+    describe 'build tasks' do
+      subject {lesson.build_task}
+      it {should be}
+      it {should be_kind_of(Task)}
+      its(:lesson) {should == lesson}
+    end
+    describe 'create tasks' do
+      subject {lesson.create_task}
+      its(:id) {should be}
+    end
   end
 end

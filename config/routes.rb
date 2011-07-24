@@ -17,4 +17,6 @@ CodeMountain::Application.routes.draw do
 
   resources :tasks, :only => [:create, :show, :update]
 
+  resources :lessons, :only => [:index]
+
 end

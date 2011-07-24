@@ -1,0 +1,4 @@
+%li
+  = form_for lesson.build_task do |f|
+    = f.hidden_field :lesson_id
+    = f.submit f.object.title

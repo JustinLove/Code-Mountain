@@ -3,11 +3,23 @@
 
 %div
   %h2 #{task.title}
-  %p
-    = formatted_text(task.detail)
-  = form_for task do |f|
-    = f.hidden_field :status, :value => 'complete'
-    = f.submit "Finish"
-  = form_tag do
-    = submit_tag "I Don't Understand"
-    = submit_tag "I'm Stuck"
+
+-if task.complete?
+  %h2 Congratulations!
+  %div
+    %h3 You Have Now Learned
+    %ul
+      %li Concept
+      %li Skill
+      %li Skill
+  =link_to 'Proceed', lessons_path
+-else
+  %div
+    %p
+      = formatted_text(task.detail)
+    = form_for task do |f|
+      = f.hidden_field :status, :value => 'complete'
+      = f.submit "Finish"
+    = form_tag do
+      = submit_tag "I Don't Understand"
+      = submit_tag "I'm Stuck"

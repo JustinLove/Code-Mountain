@@ -1,5 +1,3 @@
 class Lesson < ActiveRecord::Base
-  def create_task
-    Task.create(:lesson => self)
-  end
+  has_one :task
 end

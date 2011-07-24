@@ -9,10 +9,6 @@ class Task < ActiveRecord::Base
   delegate :title
   delegate :detail
 
-  def next
-    Task.new(:lesson_id => lesson_id + 1)
-  end
-
   def complete?
     status == 'complete'
   end

@@ -17,6 +17,14 @@ h3 {
 	font-size: 21px;
 }
 
+/* =============== Landing Page CSS =========== */
+
+
+
+#splash img {
+	margin: 0 auto;
+}
+
 #tutorialheader {
   height: 2em;
   border-bottom: solid black 0.1em;

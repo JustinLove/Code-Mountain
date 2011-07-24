@@ -4,6 +4,13 @@ body {
   line-height: 1.2;
 }
 
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
 p {
 	color: white;
 	font-size: 16px;
@@ -17,12 +24,57 @@ h3 {
 	font-size: 21px;
 }
 
+nav {
+	float: right;
+	margin: 0;
+	position: relative;
+	top: -53px;
+}
+
+	nav li {
+	  float:left;
+	  font-size: 16px;
+	  font-family: Helvetica Neue, Helvetica;
+	  height:50px;
+	  line-height:35px;
+	  list-style-type:none;
+	  margin-right:25px;
+	  position:relative;
+	  letter-spacing: 0.2px;
+	  text-transform: uppercase;
+	  border-right: 1px solid black;
+	}
+	
+	nav ul li a {
+		color: black;
+		display: block;
+		margin-right: 24px;
+		text-decoration: none;
+		text-shadow: 0 1px 2px #000000;
+	}
+	
+		nav li a:hover {
+			color: #7DB1DD;
+			text-shadow: 0 1px 1px #000;
+		}
+	
+#main-header {
+	height: 100px;
+	background: white;
+}
+
 /* =============== Landing Page CSS =========== */
 
 
 
 #splash img {
 	margin: 0 auto;
+}
+
+#home-button {
+	bottom: 476px;
+	left: 75px;
+	position: relative;
 }
 
 #tutorialheader {

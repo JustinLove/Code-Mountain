@@ -1,6 +1,15 @@
 #tutorialheader
-  = form_for task do |f|
-    = f.hidden_field :status, :value => 'complete'
-    = f.submit "Finish"
-  = help_link(task)
+  #main-header
+    .container
+      #logo
+        = link_to image_tag( '/images/codemt_logo.png'), root_path
+    
+    %nav
+      %ul.header_links
+        %li
+          = form_for task do |f|
+            = f.hidden_field :status, :value => 'complete'
+            = f.submit "Finish"
+        %li
+          = help_link(task)
 %iframe#tutorialbody{:src => task.link}

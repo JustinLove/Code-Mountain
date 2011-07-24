@@ -21,6 +21,7 @@ body {
 #logo {
 	position: relative;
 	top: 10px;
+	right: 27px;
 }
 
 #logo_2 {
@@ -53,6 +54,7 @@ nav {
 	margin: 0;
 	position: relative;
 	top: -53px;
+	right: 28px;
 }
 
 	nav li {

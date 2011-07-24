@@ -22,6 +22,7 @@ CodeMountain::Application.routes.draw do
   resources :tasks, :only => [:create, :show, :update] do
     member do
       get :tutorial
+      get :help
     end
   end
 

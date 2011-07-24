@@ -22,6 +22,4 @@
     = form_for task do |f|
       = f.hidden_field :status, :value => 'complete'
       = f.submit "Finish"
-    = form_tag do
-      = submit_tag "I Don't Understand"
-      = submit_tag "I'm Stuck"
+    = help_link(task)

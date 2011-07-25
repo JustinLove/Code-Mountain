@@ -5,3 +5,4 @@ tmp/
 webrat.log
 *.swo
 *.swp
+.DS_Store

@@ -8,7 +8,7 @@ gem 'sass'
 gem 'jquery-rails'
 gem 'decent_exposure'
 gem 'activeadmin'
-gem 'compass'
+gem 'compass', '>= 0.11.5'
 
 group :test do
   gem 'rspec'

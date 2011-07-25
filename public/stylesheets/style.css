@@ -18,6 +18,11 @@ body {
   background: #444444;
 }
 
+.debug {
+  background: gray;
+  color: black;
+}
+
 .tutorial ul {
   margin-left: 10px;
 }

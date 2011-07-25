@@ -8,6 +8,7 @@ gem 'sass'
 gem 'jquery-rails'
 gem 'decent_exposure'
 gem 'activeadmin'
+gem 'compass'
 
 group :test do
   gem 'rspec'

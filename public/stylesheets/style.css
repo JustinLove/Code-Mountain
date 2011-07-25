@@ -13,89 +13,89 @@ body {
 }
 
 .tutorial ul {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .header_links_2 {
-	bottom: 7px;
-   	left: 100px;
-   	position: relative;
+  bottom: 7px;
+  left: 100px;
+  position: relative;
 }
 
 #logo {
-	position: relative;
-	top: 10px;
-	right: 27px;
+  position: relative;
+  top: 10px;
+  right: 27px;
 }
 
 #logo_2 {
-	position: relative;
-	top: 11px;
+  position: relative;
+  top: 11px;
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-	margin-top: -11px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  margin-top: -11px;
 }
 
 p {
-	color: white;
-	font-size: 16px;
+  color: white;
+  font-size: 16px;
 }
 
 h2 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 h3 {
-	font-size: 21px;
+  font-size: 21px;
 }
 
 nav {
-	float: right;
-	margin: 0;
-	position: relative;
-	top: -53px;
-	right: 28px;
+  float: right;
+  margin: 0;
+  position: relative;
+  top: -53px;
+  right: 28px;
 }
 
-	nav li {
-	  float:left;
-	  font-size: 16px;
-	  font-family: Helvetica Neue, Helvetica;
-	  height:50px;
-	  line-height:35px;
-	  list-style-type:none;
-	  margin-right:25px;
-	  position:relative;
-	  letter-spacing: 0.2px;
-	  text-transform: uppercase;
-	  border-right: 1px solid rgba(0, 0, 0, 0.3);
-	}
-	
-	nav ul li a {
-		color: black;
-		display: block;
-		margin-right: 24px;
-		text-decoration: none;
-		text-shadow: 0 1px 2px #000000;
-	}
-	
-		nav li a:hover {
-			color: #7DB1DD;
-			text-shadow: 0 1px 1px #000;
-		}
-	
+nav li {
+  float:left;
+  font-size: 16px;
+  font-family: Helvetica Neue, Helvetica;
+  height:50px;
+  line-height:35px;
+  list-style-type:none;
+  margin-right:25px;
+  position:relative;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a {
+  color: black;
+  display: block;
+  margin-right: 24px;
+  text-decoration: none;
+  text-shadow: 0 1px 2px #000000;
+}
+
+nav li a:hover {
+  color: #7DB1DD;
+  text-shadow: 0 1px 1px #000;
+}
+
 #main-header {
-	height: 100px;
-	background: white;
+  height: 100px;
+  background: white;
 }
 
 logo img {
-	position: relative;
-	top: 10px;
+  position: relative;
+  top: 10px;
 }
 
 
@@ -105,13 +105,13 @@ logo img {
 
 
 #splash img {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 #home-button {
-	bottom: 476px;
-	left: 75px;
-	position: relative;
+  bottom: 476px;
+  left: 75px;
+  position: relative;
 }
 
 #tutorialheader form {
@@ -127,22 +127,22 @@ logo img {
 /* ========= Start Task Page ========== */
 
 #start_task {
-	bottom: 150px;
-	left: 89px;
-	position: relative;
+  bottom: 150px;
+  left: 89px;
+  position: relative;
 }
 
 #task_1 {
-	bottom: 726px;
-	float: right;
-	left: 15px;
-	position: relative;
+  bottom: 726px;
+  float: right;
+  left: 15px;
+  position: relative;
 }
 
 /* ===== Continue Task ========== */
 
 #continue {
-	bottom: 209px;
-	left: 279px;
-	position: relative;
+  bottom: 209px;
+  left: 279px;
+  position: relative;
 }

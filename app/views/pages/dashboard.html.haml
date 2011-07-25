@@ -1,5 +1,14 @@
-.container
-  %img{:alt => "Your Dashboard", :src => "images/AGAIN2.png"}
-  %a{:href => task_path(@next_task.id)}
-    %img#task_1{:alt => "Your Dashboard", :src => "images/task_redone.png"}
-  
+#content
+  .heading 
+    Dashboard
+  #progress
+    %img{:src => image_path('ProgressMountain.png')}
+  #friends
+    FRIENDS GO HERE
+#sidebar
+  #continue_learning
+    %a{:href => task_path(@next_task.id)}
+      %img#task_1{:alt => "Your Dashboard", :src => "images/task_redone.png"}
+  #proficiency
+    %img{:src => image_path('Proficiency.png')}
+

@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   def dashboard
     @next_task = Lesson.first.task!
     @next_task.save!
+    render(:layout => 'layouts/application')
   end
 
   def tutorial

@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>Code Mountain</title>
-  <%= render 'layouts/head' %>
+  <%= render 'layouts/bp_head' %>
 </head>
-<body class="application <%= controller_name -%> <%= action_name -%>">
+<body class="application <%= controller_name -%> <%= action_name -%> two-col">
   <%= render "layouts/nav" %>
-
-<%= yield %>
-
+  <div id='container'>
+    <%= yield %>
+  </div>
 </body>
 </html>

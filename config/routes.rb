@@ -5,20 +5,16 @@ CodeMountain::Application.routes.draw do
 
   root :to => 'pages#landing'
   controller :pages do
-    get 'landing'
-    get 'do_task'
-    get 'complete'
-    get 'help'
-    get 'finish'
     get 'about'
-    get 'faq'
-    get 'start'
-    get 'tutorial'
+    get 'congrats'
     get 'contact'
     get 'dashboard'
-    get 'congrats'
+    get 'faq'
     get 'get_help'
+    get 'help'
     get 'mobile'
+    get 'start'
+    get 'tutorial'
   end
 
   resources :tasks, :only => [:create, :show, :update] do

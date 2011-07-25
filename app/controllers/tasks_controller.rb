@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   expose(:task)
+  expose(:next_task) {task.next}
 
   def create
     task.save!
@@ -12,6 +13,7 @@ class TasksController < ApplicationController
   def update
     task.save!
     if task.complete?
+      task.next.save! #ensure it exists so page can navigate to it
       redirect_to complete_task_path(task)
     else
       redirect_to task_path(task)

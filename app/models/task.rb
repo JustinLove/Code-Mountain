@@ -8,4 +8,8 @@ class Task < ActiveRecord::Base
   def complete?
     status == 'complete'
   end
+
+  def next
+    Lesson.find(lesson_id + 1).task!
+  end
 end

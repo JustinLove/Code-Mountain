@@ -4,6 +4,12 @@ body {
   line-height: 1.2;
 }
 
+.application .content {
+  color: white;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
 .marketing {
   background: url(../images/new_bg.png) repeat;
 }
@@ -145,4 +151,31 @@ logo img {
   bottom: 209px;
   left: 279px;
   position: relative;
+}
+
+
+/* ======== Show Task (Intro) ====== */
+
+.title {
+  font-size: 5em;
+  margin: 1em;
+  text-align: center;
+}
+
+.detail {
+  font-size: 2em;
+  margin: 1em;
+  text-align: center;
+}
+
+.link a {
+  display: block;
+  font-size: 3em;
+  padding: 0.5em;
+  margin: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: center;
+  color: white;
+  background-color: rgb(158, 50, 50);
 }

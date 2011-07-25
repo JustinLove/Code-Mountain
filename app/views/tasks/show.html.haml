@@ -1,8 +1,5 @@
-%div
-  %h2 Progress
-
-%div
-  %h2 #{task.title}
+.container
+  %h2.title #{task.title}
 
 -if task.complete?
   %h2 Congratulations!
@@ -15,11 +12,7 @@
   =link_to 'Proceed', lessons_path
 -else
   %div
-    %p
+    %p.detail
       = formatted_text(task.detail)
     %p.link
       = link_to task.link, tutorial_task_path(task)
-    = form_for task do |f|
-      = f.hidden_field :status, :value => 'complete'
-      = f.submit "Finish"
-    = help_link(task)

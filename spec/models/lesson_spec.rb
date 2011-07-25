@@ -2,7 +2,18 @@ require 'spec_helper'
 
 describe Lesson do
   describe 'class methods' do
+    Given!(:lesson1) {Factory(:lesson)}
+    Given!(:lesson2) {Factory(:lesson)}
+    Given!(:lesson3) {Factory(:lesson)}
+    Given!(:complete) {Factory(:task, :lesson => lesson1, :status => 'complete')}
+    Given!(:incomplete) {Factory(:task, :lesson => lesson2)}
     subject {Lesson}
+
+    describe 'incomplete' do
+      subject {Lesson.incomplete}
+      it {should have(2).items}
+      its(:first) {should == lesson2}
+    end
   end
 
   describe 'instance methods' do

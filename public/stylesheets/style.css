@@ -120,6 +120,12 @@ logo img {
   position: relative;
 }
 
+/* ========= Tutorial Page ========== */
+
+body.tasks.tutorial {
+  overflow-y: hidden;
+}
+
 #tutorialheader form {
   display: inline;
 }

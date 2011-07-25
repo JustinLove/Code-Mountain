@@ -8,12 +8,14 @@ CodeMountain::Application.routes.draw do
     get 'about'
     get 'congrats'
     get 'contact'
+    post 'create_subscriber'
     get 'dashboard'
     get 'faq'
     get 'get_help'
     get 'help'
     get 'mobile'
     get 'start'
+    get 'thank_you'
     get 'tutorial'
   end
 

@@ -1,11 +1,15 @@
 body {
-  background: url(../images/new_bg.png) repeat;
+  background: #444444;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
 
+.marketing {
+  background: url(../images/new_bg.png) repeat;
+}
+
 .dashboard, .tutorial, .start, .congrats, .mobile {
-	background: #444444;
+  background: #444444;
 }
 
 .tutorial ul {

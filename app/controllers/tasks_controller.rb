@@ -11,7 +11,11 @@ class TasksController < ApplicationController
 
   def update
     task.save!
-    redirect_to task_path(task)
+    if task.complete?
+      redirect_to complete_task_path(task)
+    else
+      redirect_to task_path(task)
+    end
   end
 
   def tutorial

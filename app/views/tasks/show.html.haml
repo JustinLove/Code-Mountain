@@ -1,16 +1,5 @@
 .container
   %h2.title #{task.title}
-
--if task.complete?
-  %h2 Congratulations!
-  %div
-    %h3 You Have Now Learned
-    %ul
-      %li Concept
-      %li Skill
-      %li Skill
-  =link_to 'Proceed', lessons_path
--else
   %div
     %p.detail
       = formatted_text(task.detail)

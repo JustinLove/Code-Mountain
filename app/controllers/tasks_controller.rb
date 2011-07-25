@@ -12,7 +12,7 @@ class TasksController < ApplicationController
 
   def update
     task.save!
-    if task.complete?
+    if params[:task][:status] == 'complete'
       task.next.save! #ensure it exists so page can navigate to it
       redirect_to complete_task_path(task)
     else

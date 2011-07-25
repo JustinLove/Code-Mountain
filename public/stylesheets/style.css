@@ -18,6 +18,11 @@ body {
   background: #444444;
 }
 
+.debug {
+  background: gray;
+  color: black;
+}
+
 .tutorial ul {
   margin-left: 10px;
 }
@@ -108,11 +113,55 @@ logo img {
 
 /* =============== Landing Page CSS =========== */
 
+#thank_you h2
+{
+  color: white;
+  margin-top: 50px;
+  width: 800px;
 
+}
+
+#thank_you a
+{
+  color: white;
+}
 
 #splash img {
   margin: 0 auto;
 }
+
+
+.landing-form {
+	position: relative;
+	width: 260px;
+	margin-top: 80px;
+	margin-left: 110px;
+  position: absolute;
+  left: auto;
+  top: 250px;
+}
+
+
+.landing-form label {
+  color: white;
+}
+
+.landing-form input{
+	height: 18px;
+	width: 250px;
+	font-size: 15px;
+	position: relative;
+		margin-bottom: 15px;
+}
+
+.landing-form #subscriber_submit{
+	height: 85px;
+	width: 250px;
+	margin: 0 0 0 -10px;
+	background: url('images/button.png') transparent;
+	border: 0;
+}
+
 
 #home-button {
   bottom: 476px;

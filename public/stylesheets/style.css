@@ -194,7 +194,7 @@ logo img {
 
 #next h2 {
   margin-bottom: 1.5em;
-  visible: false;
+  visibility: hidden;
 }
 
 #next a {

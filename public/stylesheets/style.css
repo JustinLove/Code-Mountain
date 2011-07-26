@@ -424,7 +424,7 @@ body.tasks.tutorial {
 
 #get_help {
   font-size: 1.2em;
-  height: 18em;
+  height: 20em;
 }
 
 
@@ -447,6 +447,7 @@ body.tasks.tutorial {
 
 #get_help .help_detail textarea {
   border: 2px inset #a57979;
+  font-size: 1em;
 }
 
 #get_help .send_to {

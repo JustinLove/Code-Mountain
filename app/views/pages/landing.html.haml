@@ -1,6 +1,6 @@
 #splash.container
   %img{:alt => "Welcome to Code Mountain", :src => "images/landing_page_3.png"}/
-  =form_for :subscriber, @subscriber, :url => { :action => "create_subscriber" }, :html => {:class => 'landing-form'} do |f|
+  =form_for @subscriber, :url => { :action => "create_subscriber" }, :html => {:class => 'landing-form'} do |f|
     = f.label :name
     = f.text_field :name
     = f.label :email

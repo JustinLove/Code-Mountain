@@ -13,6 +13,7 @@ describe Lesson do
       subject {Lesson.incomplete}
       it {should have(2).items}
       its(:first) {should == lesson2}
+      its(:last) {should == lesson3}
     end
   end
 

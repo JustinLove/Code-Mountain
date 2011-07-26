@@ -4,6 +4,5 @@
     %title Code Mountain
     = render 'layouts/head'
 %body{:class => "application #{controller_name} #{action_name}"}
-  .content
-    = yield
-  = render 'layouts/debug'
+  = yield
+  -# render 'layouts/debug'

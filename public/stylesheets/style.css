@@ -19,6 +19,7 @@ body {
 }
 
 .debug {
+  clear: both;
   background: gray;
   color: black;
 }

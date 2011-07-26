@@ -348,6 +348,8 @@ body.tasks.tutorial {
 /* ======== Help message received styles ======== */
 
 #help_response_message {
+  display: absolute;
+  
   padding: 1em;
   background-color: #ff0;
   display: none;

@@ -7,7 +7,7 @@
 
     // $(this) would be the same as $($('#element'));
 
-    this.fadeIn('normal', function(){
+    this.slideDown('normal', function(){
 
       // the this keyword is a DOM element
 

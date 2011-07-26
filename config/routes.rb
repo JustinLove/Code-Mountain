@@ -13,6 +13,7 @@ CodeMountain::Application.routes.draw do
     get 'faq'
     get 'get_help'
     get 'help'
+    get 'help_confirm'
     get 'mobile'
     get 'start'
     get 'thank_you'

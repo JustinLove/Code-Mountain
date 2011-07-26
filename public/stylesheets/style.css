@@ -232,7 +232,7 @@ body.tasks.tutorial {
 /* ========= Help Dialog =========== */
 
 #cboxLoadedContent .dialog * {
-  font-size: 1.4em;
+  /*font-size: 1.4em;*/
 }
 
 #cboxLoadedContent * {
@@ -250,7 +250,7 @@ body.tasks.tutorial {
 }
 
 #cboxLoadedContent .help_confirm * {
-  font-size: 4em;
+ /* font-size: 4em; */
 }
 
 /* ========= Start Task Page ========== */
@@ -360,7 +360,7 @@ body.tasks.tutorial {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background-color: #ffff70;
+  background-color: #c2e8ff;
   display: none;
   padding: 1em;
   text-align: center;
@@ -392,7 +392,7 @@ body.tasks.tutorial {
 #help_response .response_title {
   font-size: 2em;
   font-weight: bold;
-  background-color: #aaa;
+  background-color: #c2e8ff;
   padding: 0.2em 0.3em;
 }
 

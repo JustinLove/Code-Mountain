@@ -1,2 +1,13 @@
-%div
-  = image_tag('/images/updated_lightbox.png', :width => 709, :height => 511)
+= form_tag '/help_confirm', :class => 'help' do
+  %h2 Help, I'm Stuck
+  %p Where did you get stuck?
+  = text_area :help, :question, :rows => 5
+  %div
+    %p Send this to:
+    %p
+      = check_box 'help', 'friends',  :checked => 'checked'
+      Your Friends
+    %p
+      = check_box 'help', 'experts'
+      Expert Climbers
+  = submit_tag "Get Help"

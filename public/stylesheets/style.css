@@ -223,6 +223,16 @@ body.tasks.tutorial {
   background-color: white;
 }
 
+/* ========= Help Diagog =========== */
+
+#cboxLoadedContent * {
+  color: black;
+}
+
+#cboxLoadedContent .debug {
+  display: none;
+}
+
 /* ========= Start Task Page ========== */
 
 #start_task {

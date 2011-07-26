@@ -1,6 +1,8 @@
 .wedge
   .right.column
-    = image_tag('/images/ContinueLearning.png', :class => 'next')
-    = image_tag('/images/Proficiency.png', :class => 'proficiency')
+    #next
+      %h2 Continue Learning
+      = link_to next_task.title, task_path(next_task)
+    = image_tag('/images/Proficiency.png', :id => 'proficiency')
   .left.column
-    = image_tag('/images/ProgressMountain.png', :class => 'mountain')
+    = image_tag('/images/ProgressMountain.png', :id => 'mountain')

@@ -186,6 +186,27 @@ logo img {
   width: 318px;
 }
 
+#next {
+  width: 318px;
+  height: 147px;
+  background: url(/images/ContinueLearning.png)
+}
+
+#next h2 {
+  margin-bottom: 1.5em;
+  visible: false;
+}
+
+#next a {
+  display: block;
+  font-size: 2em;
+  padding: 0.3em;
+  margin: 1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(158, 50, 50);
+}
+
 /* ========= Tutorial Page ========== */
 
 body.tasks.tutorial {

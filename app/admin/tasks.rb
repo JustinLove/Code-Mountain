@@ -1,6 +1,6 @@
 ActiveAdmin.register Task do
   index do |f|
-    column :id, do |task| 
+    column :id do |task| 
       link_to task.id, admin_task_path(task)
     end
     column :lesson

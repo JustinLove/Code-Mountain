@@ -344,14 +344,40 @@ body.tasks.tutorial {
 /* ======== Help message received styles ======== */
 
 #help_response_message {
-  display: absolute;
-  
-  padding: 1em;
-  background-color: #ff0;
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 0.5em;
+  background-color: #ffff70;
   display: none;
   padding: 1em;
-
+  text-align: center;
+  border: 1px solid #999;
+  border-top: 3px groove #ccc;
+  z-index: 10000;
 }
+
+#help_response_message .img {
+  display: inline;
+}
+
+#help_response_message .img img {
+  border: 1px solid #aaa;
+  background-color: #fff;
+  height: 32px;
+  padding: 2px;
+  vertical-align: middle;
+}
+
+#help_response_message .msg {
+  font-weight: bold;
+  display: inline; 
+  padding-left: 0.5em;
+  font-size: 1.2em;
+}
+
 
 #help_response .response_title {
   font-size: 2em;

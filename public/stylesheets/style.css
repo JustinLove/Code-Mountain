@@ -199,9 +199,8 @@ logo img {
 
 #next a {
   display: block;
-  font-size: 2em;
-  padding: 0.3em;
-  margin: 1em;
+  padding: 0.5em;
+  margin: 2em;
   text-align: center;
   color: white;
   background-color: rgb(158, 50, 50);

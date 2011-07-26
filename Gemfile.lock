@@ -38,6 +38,7 @@ GEM
     activesupport (3.0.9)
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
+    bluecloth (2.1.0)
     builder (2.1.2)
     decent_exposure (1.0.1)
     devise (1.4.2)
@@ -138,6 +139,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  bluecloth (>= 2.0.0)
   decent_exposure
   factory_girl_rails
   haml

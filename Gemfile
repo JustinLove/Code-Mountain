@@ -8,6 +8,7 @@ gem 'sass'
 gem 'jquery-rails'
 gem 'decent_exposure'
 gem 'activeadmin'
+gem 'bluecloth', '>= 2.0.0'
 
 group :test do
   gem 'rspec'

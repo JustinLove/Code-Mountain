@@ -1,6 +1,7 @@
 module ApplicationHelper
   def formatted_text(s)
-    (h s).gsub("\r\n", '<br/>').html_safe
+    bc = BlueCloth.new(s)
+    bc.to_html.html_safe
   end
 
   def help_link(task)

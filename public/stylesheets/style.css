@@ -265,7 +265,7 @@ body.tasks.tutorial {
   text-align: center;
 }
 
-.detail {
+.detail * {
   font-size: 2em;
   margin: 1em;
   text-align: center;

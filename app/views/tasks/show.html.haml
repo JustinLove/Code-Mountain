@@ -1,7 +1,7 @@
 .container
   %h2.title #{task.title}
   %div
-    %p.detail
+    .detail
       = formatted_text(task.detail)
     %p.link
       = link_to task.link, tutorial_task_path(task)

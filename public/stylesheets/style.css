@@ -249,8 +249,8 @@ body.tasks.tutorial {
 }
 
 #cboxLoadedContent .help_confirm {
-  width: 30em;
-  height: 20em;
+  width: 35em;
+  height: 28em;
   text-align: center;
 }
 
@@ -370,7 +370,7 @@ body.tasks.tutorial {
   padding: 1em;
   text-align: center;
   border: 1px solid #5cc2ff;
-  border-top: 3px groove #5cc2ff;
+  border-top: 3px groove #ccc;
   z-index: 10000;
 }
 
@@ -409,6 +409,7 @@ body.tasks.tutorial {
   background-color: #fff;
   height: 50px;
   padding: 3px;
+  vertical-align: middle;
 }
 
 #help_response .user_name {
@@ -426,7 +427,6 @@ body.tasks.tutorial {
   font-size: 1.2em;
   height: 20em;
 }
-
 
 #get_help .help_detail{
   margin: 0 1em;
@@ -461,4 +461,18 @@ body.tasks.tutorial {
 #get_help .submit {
   padding-top: 1em;
   text-align: center;
+}
+
+#call_for_help .msg {
+  font-weight: bold;
+  padding: 0.25em;
+  font-size: 2em;
+  color: #a53234;
+  text-align: center;
+}
+
+
+#call_for_help .batman img {
+  border: 0px;
+  padding: 0 1em;
 }

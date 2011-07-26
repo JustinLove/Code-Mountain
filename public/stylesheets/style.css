@@ -237,7 +237,7 @@ body.tasks.tutorial {
 /* ========= Help Dialog =========== */
 
 #cboxLoadedContent .dialog * {
-  font-size: 1.4em;
+  /*font-size: 1.4em;*/
 }
 
 #cboxLoadedContent * {
@@ -249,13 +249,13 @@ body.tasks.tutorial {
 }
 
 #cboxLoadedContent .help_confirm {
-  width: 40em;
-  height: 30em;
+  width: 30em;
+  height: 20em;
   text-align: center;
 }
 
 #cboxLoadedContent .help_confirm * {
-  font-size: 4em;
+  /*font-size: 4em;*/
 }
 
 /* ========= Start Task Page ========== */
@@ -365,12 +365,12 @@ body.tasks.tutorial {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background-color: #ffff70;
+  background-color: #c2e8ff;
   display: none;
   padding: 1em;
   text-align: center;
-  border: 1px solid #999;
-  border-top: 3px groove #ccc;
+  border: 1px solid #5cc2ff;
+  border-top: 3px groove #5cc2ff;
   z-index: 10000;
 }
 
@@ -390,14 +390,13 @@ body.tasks.tutorial {
   font-weight: bold;
   display: inline; 
   padding-left: 0.5em;
-  font-size: 1.2em;
 }
 
 
 #help_response .response_title {
   font-size: 2em;
   font-weight: bold;
-  background-color: #aaa;
+  background-color: #c2e8ff;
   padding: 0.2em 0.3em;
 }
 
@@ -420,6 +419,45 @@ body.tasks.tutorial {
 #help_response .response {
   padding: 1em;
   font-family: Courier, "Courier New", monospace;
-  border: 1px solid #aaa;
+  border: 1px solid #c2e8ff;
 }
 
+#get_help {
+  font-size: 1.2em;
+  height: 18em;
+}
+
+
+#get_help .help_detail{
+  margin: 0 1em;
+}
+
+#get_help .help_title {
+  font-weight: bold;
+  padding: 0.25em;
+  font-size: 2em;
+  color: #a53234;
+  text-align: center;
+}
+
+#get_help .help_detail .question {
+  padding: 1em 0 0.5em 0;
+  color: #636363;
+}
+
+#get_help .help_detail textarea {
+  border: 2px inset #a57979;
+}
+
+#get_help .send_to {
+  color: #636363;
+}
+
+#get_help .group {
+  color: #000;
+}
+
+#get_help .submit {
+  padding-top: 1em;
+  text-align: center;
+}

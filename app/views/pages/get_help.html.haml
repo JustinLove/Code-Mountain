@@ -1,14 +1,18 @@
-= form_tag '/help_confirm', :class => 'help' do
-  %h2 Help, I'm Stuck
-  %p Where did you get stuck?
-  = text_area :help, :question, :rows => 5
-  %div
-    %p Send this to:
-    %p
-      = check_box 'help', 'friends',  :checked => 'checked'
-      Your Friends
-    %p
-      = check_box 'help', 'experts'
-      Expert Climbers
-  = submit_tag "Get Help"
+#get_help
+  = form_tag '/help_confirm', :class => 'help' do
+    .help_title Help, I'm Stuck
+    .help_detail
+      .question
+        Where did you get stuck?
+      = text_area :help, :question, :rows => 5, :cols => 50
+      .send_to
+        Send this to:
+        .group
+          = check_box 'help', 'friends',  :checked => 'checked'
+          Your Friends
+        .group
+          = check_box 'help', 'experts'
+          Expert Climbers
+      .submit
+        = image_submit_tag '/images/get_help_button.png'
 

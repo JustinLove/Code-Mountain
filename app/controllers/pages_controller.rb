@@ -12,6 +12,10 @@ class PagesController < ApplicationController
   def help_confirm
     render :layout => 'dialog'
   end
+
+  def get_response
+    render :layout => 'dialog'
+  end
   
   def landing
     @subscriber = Subscriber.new

@@ -330,3 +330,43 @@ body.tasks.tutorial {
   color: white;
   background-color: #9e3232;
 }
+
+/* ======== Help message received styles ======== */
+
+#help_response_message {
+  padding: 1em;
+  background-color: #ff0;
+  display: none;
+  padding: 1em;
+
+}
+
+#help_response .response_title {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #aaa;
+  padding: 0.2em 0.3em;
+}
+
+#help_response .img {
+ display: inline;
+}
+
+#help_response .img img{
+  border: 1px solid #999;
+  background-color: #fff;
+  height: 50px;
+  padding: 3px;
+}
+
+#help_response .user_name {
+  display: inline;
+  vertical-align: top;
+}
+
+#help_response .response {
+  padding: 1em;
+  font-family: Courier, "Courier New", monospace;
+  border: 1px solid #aaa;
+}
+

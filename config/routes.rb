@@ -12,6 +12,7 @@ CodeMountain::Application.routes.draw do
     get 'dashboard'
     get 'faq'
     get 'get_help'
+    get 'get_response'
     get 'help'
     get 'help_confirm'
     get 'mobile'

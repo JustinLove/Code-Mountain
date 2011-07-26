@@ -5,10 +5,8 @@
   <%= render 'layouts/head' %>
 </head>
 <body class="<%= controller_name -%> <%= action_name -%>">
-
-<%= yield %>
-
-<%= render "layouts/debug" %>
+  <%= yield %>
+<%# render "layouts/debug" %>
 
 </body>
 </html>

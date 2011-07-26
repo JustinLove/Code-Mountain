@@ -11,4 +11,8 @@ $(function() {
     $.colorbox.close()
     return false;
   })
+
+  $('a.response').colorbox();
 })
+
+

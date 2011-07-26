@@ -7,5 +7,9 @@
         = link_to image_tag('leftbracket_red.png'), dashboard_path
         = link_to image_tag('imstuck.png'), get_help_path, :class => 'help'
         = link_to image_tag('finish_task.png'), congrats_path
+#help_response_message
+  Mike has responded to your message.
+  = link_to "Click Here to view", get_response_path, :class => 'response'
+
 .container
   %img{:alt => "Welcome to Code Mountain", :src => "images/rails_for_zombies_02.png"}/

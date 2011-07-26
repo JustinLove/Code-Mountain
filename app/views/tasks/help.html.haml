@@ -1,1 +1,13 @@
-%h2 HELP!
+= form_tag '/confirm_help', :class => 'help' do
+  %h2 Help, I'm Stuck
+  %p Where did you get stuck?
+  = text_area :help, :question, :rows => 5
+  %div
+    %p Send this to:
+    %p
+      = check_box 'help', 'friends',  :checked => 'checked'
+      Your Friends
+    %p
+      = check_box 'help', 'experts'
+      Expert Climbers
+  = submit_tag "Get Help"

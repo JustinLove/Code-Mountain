@@ -23,4 +23,8 @@ class TasksController < ApplicationController
   def tutorial
     render :layout => 'navless'
   end
+
+  def help
+    render :layout => 'dialog'
+  end
 end

@@ -3,9 +3,7 @@
   %h2 You have finished #{task.title}!
 .box
   %h3 You have now learned:
-  %ul
-    %li Concept
-    %li Skill
-    %li Skill
+  .detail
+    = formatted_text(task.benefits)
   =link_to 'Dashboard', dashboard_path
   =link_to 'Proceed', task_path(next_task)

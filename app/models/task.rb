@@ -4,6 +4,7 @@ class Task < ActiveRecord::Base
   delegate :title, :to => :lesson
   delegate :detail, :to => :lesson
   delegate :link, :to => :lesson
+  delegate :benefits, :to => :lesson
 
   def complete?
     status == 'complete'

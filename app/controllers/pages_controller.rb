@@ -1,6 +1,18 @@
 class PagesController < ApplicationController
   layout 'marketing'
 
+  def dashboard
+    render :layout => 'application'
+  end
+
+  def start
+    render :layout => 'application'
+  end
+
+  def congrats
+    render :layout => 'application'
+  end
+
   def tutorial
     render :layout => 'navless'
   end

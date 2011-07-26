@@ -1,0 +1,10 @@
+!!! 5
+%html
+  %head
+    %title Code Mountain
+    = render 'layouts/head'
+%body{:class => "marketing #{controller_name} #{action_name}"}
+  = render 'layouts/nav'
+  .content
+    = yield
+  = render 'layouts/debug'

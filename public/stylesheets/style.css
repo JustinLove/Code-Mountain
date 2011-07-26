@@ -68,9 +68,9 @@ h3 {
 nav {
   float: right;
   margin: 0;
-  position: relative;
-  top: -53px;
-  right: 28px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
 }
 
 nav li {

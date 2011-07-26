@@ -1,6 +1,6 @@
 ActiveAdmin.register AdminUser do
   index do |f|
-    column :email, do |user| 
+    column :email do |user| 
       link_to user.email, admin_admin_user_path(user)
     end
     column :current_sign_in_at

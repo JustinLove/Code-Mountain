@@ -132,10 +132,10 @@ logo img {
 
 
 .landing-form {
-	position: relative;
-	width: 260px;
-	margin-top: 80px;
-	margin-left: 110px;
+  position: relative;
+  width: 260px;
+  margin-top: 80px;
+  margin-left: 110px;
   position: absolute;
   left: auto;
   top: 250px;
@@ -147,19 +147,19 @@ logo img {
 }
 
 .landing-form input{
-	height: 18px;
-	width: 250px;
-	font-size: 15px;
-	position: relative;
-		margin-bottom: 15px;
+  height: 18px;
+  width: 250px;
+  font-size: 15px;
+  position: relative;
+    margin-bottom: 15px;
 }
 
 .landing-form #subscriber_submit{
-	height: 85px;
-	width: 250px;
-	margin: 0 0 0 -10px;
-	background: url('images/button.png') transparent;
-	border: 0;
+  height: 85px;
+  width: 250px;
+  margin: 0 0 0 -10px;
+  background: url('images/button.png') transparent;
+  border: 0;
 }
 
 

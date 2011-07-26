@@ -75,7 +75,9 @@ nav {
 
 nav .profile-pic {
   display:inline;
+  margin-top: 0.7em;
   padding-right: 20px;
+  vertical-align: -35%;
 }
 
 nav ul {

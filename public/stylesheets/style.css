@@ -49,7 +49,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-  margin-top: -11px;
+  position:relative;
 }
 
 p {
@@ -128,18 +128,14 @@ logo img {
 }
 
 #splash img {
-  margin: 0 auto;
 }
 
 
 .landing-form {
-  position: relative;
   width: 260px;
-  margin-top: 80px;
-  margin-left: 110px;
   position: absolute;
-  left: auto;
-  top: 250px;
+  left: 70px;
+  top: 200px;
 }
 
 

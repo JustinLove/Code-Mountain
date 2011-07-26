@@ -2,9 +2,10 @@ class Lesson < ActiveRecord::Base
   has_one :task
 
   def self.incomplete
-    t = Task.arel_table
-    complete = t.where(t[:status].eq('complete')).project(t[:id])
-    Lesson.where(arel_table[:id].not_in(complete))
+    # FIXME: This will query every lesson and it's task, but NOT IN doesn't work
+    Lesson.all.reject do |l|
+      l.task && l.task.complete?
+    end
   end
 
   def task!

@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
 
   def get_help
-    render :layout => 'navless'
+    render :layout => 'dialog'
   end
   
   def landing
@@ -16,6 +16,6 @@ class PagesController < ApplicationController
   def create_subscriber
     @subscriber = Subscriber.new(params[:subscriber])
     @subscriber.save
-  	redirect_to thank_you_url 
+    redirect_to thank_you_url 
   end
 end

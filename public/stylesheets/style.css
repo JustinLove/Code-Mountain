@@ -219,7 +219,11 @@ body.tasks.tutorial {
   background-color: white;
 }
 
-/* ========= Help Diagog =========== */
+/* ========= Help Dialog =========== */
+
+#cboxLoadedContent .dialog * {
+  font-size: 1.4em;
+}
 
 #cboxLoadedContent * {
   color: black;
@@ -227,6 +231,16 @@ body.tasks.tutorial {
 
 #cboxLoadedContent .debug {
   display: none;
+}
+
+#cboxLoadedContent .help_confirm {
+  width: 40em;
+  height: 30em;
+  text-align: center;
+}
+
+#cboxLoadedContent .help_confirm * {
+  font-size: 4em;
 }
 
 /* ========= Start Task Page ========== */

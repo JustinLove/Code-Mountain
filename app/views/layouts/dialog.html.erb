@@ -6,9 +6,11 @@
   <%= javascript_include_tag 'application' %>
 
 </head>
-<body class="<%= controller_name -%> <%= action_name -%>">
+<body>
 
+<div class="dialog <%= controller_name -%> <%= action_name -%>">
 <%= yield %>
+</div>
 
 </body>
 </html>

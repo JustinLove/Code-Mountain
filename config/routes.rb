@@ -9,7 +9,6 @@ CodeMountain::Application.routes.draw do
     get 'congrats'
     get 'contact'
     post 'create_subscriber'
-    get 'dashboard'
     get 'faq'
     get 'get_help'
     get 'help'
@@ -18,6 +17,8 @@ CodeMountain::Application.routes.draw do
     get 'thank_you'
     get 'tutorial'
   end
+
+  match 'dashboard' => 'dashboard#index'
 
   resources :tasks, :only => [:create, :show, :update] do
     member do

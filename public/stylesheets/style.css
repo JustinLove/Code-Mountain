@@ -169,6 +169,23 @@ logo img {
   position: relative;
 }
 
+/* ========= Dashboard =============== */
+
+.wedge {
+  width: 1000px;
+  position: relative;
+}
+
+.column {
+  float: right;
+  position: relative;
+}
+
+.right.column {
+  clear: right;
+  width: 318px;
+}
+
 /* ========= Tutorial Page ========== */
 
 body.tasks.tutorial {

@@ -2,7 +2,12 @@ $(function() {
   $('a.help').colorbox({
     onClosed: function() {
       $.colorbox({
-        href: '/help_confirm'
+        href: '/help_confirm',
+        onClosed: function() {
+          setTimeout(function() {
+            $('#help_response_message').pop_message()
+          }, 2000)
+        }
       })
     }
   })

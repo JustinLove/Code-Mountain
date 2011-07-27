@@ -218,6 +218,12 @@ logo img {
   background-color: rgb(158, 50, 50);
 }
 
+/* ======== fake dashboard ========= */
+
+#fake_dashboard {
+  margin-top: 4em;
+}
+
 /* ========= Tutorial Page ========== */
 
 body.tasks.tutorial {
@@ -283,10 +289,9 @@ body.pages.tutorial {
 }
 
 #task_1 {
-  bottom: 726px;
-  float: right;
-  left: 15px;
-  position: relative;
+  top: 215px;
+  left: 730px;
+  position: absolute;
 }
 
 /* ===== Continue Task ========== */

@@ -34,7 +34,7 @@ body {
   right: 27px;
 }
 	
-	#logo img, #logo-2 img, #logo-2 a img {
+	#logo img, #logo_2 img, #logo_2 a img {
 		height: 75px;
 	}
 	
@@ -433,11 +433,8 @@ background-image: -moz-linear-gradient(
   padding: 1em;
   text-align: center;
   /*border: .5px solid #ffffff;*/
-  border-bottom: .3px groove #ccc;
   z-index: 10000;
-
--moz-box-shadow: 0 2px 5px #000;
--webkit-box-shadow: 0 2px 5px #000;
+border-bottom: 3px solid rgba(0,0,0, 0.5);
 }
 
 #help_response_message .img {
@@ -468,6 +465,10 @@ background-image: -moz-linear-gradient(
 		padding: 5px;
 		text-decoration: none;
 	}
+	
+		#help_response_message .msg a:hover {
+			color: #444444;
+		}
 
 
 #help_response .response_title {

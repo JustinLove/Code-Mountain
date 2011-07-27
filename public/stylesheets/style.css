@@ -435,7 +435,7 @@ body.pages.tutorial {
 #help_response .response_title {
   font-size: 2em;
   font-weight: bold;
-  background-color: #c2e8ff;
+  background-color: #31BA00;
   padding: 0.2em 0.3em;
 }
 
@@ -452,14 +452,16 @@ body.pages.tutorial {
 }
 
 #help_response .user_name {
-  display: inline;
-  vertical-align: top;
+  	color: white;
+	display: inline;
+	text-shadow: 0 1px 2px #000000;
+	vertical-align: top;
 }
 
 #help_response .response {
   padding: 1em;
   font-family: Courier, "Courier New", monospace;
-  border: 1px solid #c2e8ff;
+  border: 1px solid #31BA00;
 }
 
 #get_help {

@@ -263,16 +263,16 @@ logo img {
 
 #avatar {
   position: absolute;
-  top: 450px;
-  left: 148px;
+  top: 520px;
+  left: 152px;
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes pulse {
@@ -353,7 +353,7 @@ logo img {
 }
 
 #task_1 {
-  top: 215px;
+  top: 275px;
   left: 730px;
   position: absolute;
 }

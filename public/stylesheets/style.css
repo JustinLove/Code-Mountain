@@ -250,6 +250,44 @@ logo img {
   margin-top: 4em;
 }
 
+#avatar {
+  position: absolute;
+  top: 450px;
+  left: 148px;
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform:scale(1);
+  }
+  50% {
+    -webkit-transform:scale(1.1);
+  }
+  to {
+    -webkit-transform:scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  from {
+    -moz-transform:scale(1);
+  }
+  50% {
+    -moz-transform:scale(1.1);
+  }
+  to {
+    -moz-transform:scale(1);
+  }
+}
+
 /* ========= Help Dialog =========== */
 
 #cboxLoadedContent {

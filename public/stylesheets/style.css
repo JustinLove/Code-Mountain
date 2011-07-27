@@ -197,6 +197,7 @@ logo img {
   margin: 0 0 0 -10px;
   background: url('images/button.png') transparent;
   border: 0;
+  cursor:pointer;
 }
 
 

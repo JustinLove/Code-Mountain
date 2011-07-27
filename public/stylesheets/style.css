@@ -118,6 +118,7 @@ nav li a:hover {
   width: 100%;
   height: 100px;
   background: white;
+  background: url('/images/header-bg.png') repeat-x;
 }
 
 logo img {

@@ -17,6 +17,10 @@ class PagesController < ApplicationController
     render :layout => 'navless'
   end
 
+  def fake_iframe
+    render :layout => 'dialog'
+  end
+
   def get_help
     render :layout => 'dialog'
   end

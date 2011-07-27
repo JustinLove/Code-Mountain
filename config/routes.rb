@@ -10,6 +10,7 @@ CodeMountain::Application.routes.draw do
     get 'contact'
     post 'create_subscriber'
     get 'dashboard'
+    get 'fake_iframe'
     get 'faq'
     get 'get_help'
     get 'get_response'

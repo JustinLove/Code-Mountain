@@ -34,7 +34,7 @@ body {
   right: 27px;
 }
 	
-	#logo img {
+	#logo img, #logo-2 img, #logo-2 a img {
 		height: 75px;
 	}
 	
@@ -134,6 +134,10 @@ background-image: -moz-linear-gradient(
     #FFFFFF 54%
 );
 
+box-shadow: 0 3px 8px #000000;
+-moz-box-shadow: 0 3px 8px #000000;
+-webkit-box-shadow: 0 3px 8px #000000;
+
 
   /*background: url('/images/header-bg.png') repeat-x;*/
 }
@@ -141,6 +145,11 @@ background-image: -moz-linear-gradient(
 logo img {
   position: relative;
   top: 10px;
+}
+
+.cl-30 {
+	font-size: 1px;
+	height: 30px;
 }
 
 
@@ -424,7 +433,7 @@ background-image: -moz-linear-gradient(
   padding: 1em;
   text-align: center;
   /*border: .5px solid #ffffff;*/
-  border-bottom: .5px groove #ccc;
+  border-bottom: .3px groove #ccc;
   z-index: 10000;
 
 -moz-box-shadow: 0 2px 5px #000;
@@ -454,9 +463,6 @@ background-image: -moz-linear-gradient(
 }
 
 	#help_response_message .msg a {
-		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
-		border: 0.3px solid #FFFFFF;
-		border-radius: 9px 9px 9px 9px;
 		color: black;
 		font-size: 0.8em;
 		padding: 5px;

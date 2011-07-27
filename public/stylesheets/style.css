@@ -524,6 +524,7 @@ logo img {
 
 #help_response .response {
   padding: 1em;
+  padding-bottom: 0em;
   font-family: Courier, "Courier New", monospace;
 }
 

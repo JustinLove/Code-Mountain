@@ -527,7 +527,6 @@ border-bottom: 3px solid rgba(0,0,0, 0.5);
 #help_response .response {
   padding: 1em;
   font-family: Courier, "Courier New", monospace;
-  border: 1px solid #31BA00;
 }
 
 #get_help {

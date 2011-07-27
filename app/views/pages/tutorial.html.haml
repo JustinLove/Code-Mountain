@@ -1,11 +1,12 @@
-#main-header
-  #logo_2
-    = link_to image_tag( '/images/codemt_logo.png'), root_path
-  %nav
-    %ul.header_links_2
-      = link_to image_tag('leftbracket_red.png'), dashboard_path
-      = link_to image_tag('imstuck.png'), get_help_path, :class => 'help'
-      = link_to image_tag('finish_task.png'), congrats_path
+#tutorial-header
+  #main-header
+    #logo_2
+      = link_to image_tag( '/images/codemt_logo.png'), root_path
+    %nav
+      %ul.header_links_2
+        = link_to image_tag('leftbracket_red.png'), dashboard_path
+        = link_to image_tag('imstuck.png'), get_help_path, :class => 'help'
+        = link_to image_tag('finish_task.png'), congrats_path
 #help_response_message
   .help_action
     .img
@@ -13,5 +14,5 @@
     .msg
       Ri has responded to your message.
       = link_to "Click Here to view", get_response_path, :class => 'response'
-
-%iframe#tutorialbody{:src => fake_iframe_path}
+#tutorialbody
+  %iframe{:src => fake_iframe_path}

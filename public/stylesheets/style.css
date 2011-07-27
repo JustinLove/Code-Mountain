@@ -227,34 +227,47 @@ logo img {
 
 /* ========= Tutorial Page ========== */
 
-body.tasks.tutorial {
+html, body, iframe {
+  height: 100%;
+}
+
+html {
   overflow-y: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#tutorialheader, #tutorialbody, iframe {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+#tutorialbody {
+  top: 100px;
+  bottom: 0px;
+}
+
+iframe {
+  background-color: white;
 }
 
 #tutorialheader form {
   display: inline;
 }
 
-#tutorialbody {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
 /* ========= fake tutorial page ===== */
 
-body.pages.tutorial {
-  overflow-y: hidden;
-}
-
-.fake_iframe {
-  overflow-x: hidden;
+.fake_iframe .content {
+  text-align: center;
 }
 
 .fake_iframe img {
-  position: absolute;
-  left: 50%;
-  margin-left: -693px;
+  margin-left: -170px;
+  margin-right: -170px
 }
 
 /* ========= Help Dialog =========== */

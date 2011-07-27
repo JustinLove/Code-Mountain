@@ -387,13 +387,16 @@ body.pages.tutorial {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background-color: #c2e8ff;
+  background-color: #31BA00;
   display: none;
   padding: 1em;
   text-align: center;
-  border: 1px solid #5cc2ff;
-  border-top: 3px groove #ccc;
+  /*border: .5px solid #ffffff;*/
+  border-bottom: .5px groove #ccc;
   z-index: 10000;
+
+-moz-box-shadow: 0 2px 5px #000;
+-webkit-box-shadow: 0 2px 5px #000;
 }
 
 #help_response_message .img {
@@ -409,11 +412,24 @@ body.pages.tutorial {
 }
 
 #help_response_message .msg {
-  font-weight: bold;
-  display: inline; 
-  padding-left: 0.5em;
-  font-size: 1.2em;
+  	color: white;
+	display: inline;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	padding-left: 0.5em;
+	text-shadow: 0 1px 1px #316000;
 }
+
+	#help_response_message .msg a {
+		background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+		border: 0.3px solid #FFFFFF;
+		border-radius: 9px 9px 9px 9px;
+		color: black;
+		font-size: 0.8em;
+		padding: 5px;
+		text-decoration: none;
+	}
 
 
 #help_response .response_title {

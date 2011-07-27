@@ -18,5 +18,9 @@
         %li= link_to "Messages", root_path
         %li{:class => "last"}= link_to "Logout", root_path
   .content
+    %p.notice
+      = notice
+    %p.alert
+      = alert
     = yield
   = render 'layouts/debug'

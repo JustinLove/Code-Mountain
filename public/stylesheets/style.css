@@ -284,16 +284,38 @@ body.pages.tutorial {
 
 /* ========= Help Dialog =========== */
 
+#cboxLoadedContent {
+}
+
 #cboxLoadedContent .dialog * {
   /*font-size: 1.4em;*/
 }
 
 #cboxLoadedContent * {
-  color: black;
+  color: #383838;
 }
 
 #cboxLoadedContent .debug {
   display: none;
+}
+
+#cboxLoadedContent #help_question {
+  padding: 10px;
+  height: 90px;
+  margin-bottom: 5px;
+}
+
+#cboxLoadedContent #get_help .send_to {
+  color: #A53234;
+}
+
+#cboxLoadedContent #get_help .group {
+  line-height: 1.5em;
+  color: #464646;
+  }
+  
+#cboxLoadedContent #get_help .submit {
+  padding-top: 0px;
 }
 
 #cboxLoadedContent .help_confirm {

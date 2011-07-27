@@ -250,38 +250,6 @@ logo img {
   margin-top: 4em;
 }
 
-/* ========= Tutorial Page ========== */
-
-body.tasks.tutorial {
-  overflow-y: hidden;
-}
-
-#tutorialheader form {
-  display: inline;
-}
-
-#tutorialbody {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
-/* ========= fake tutorial page ===== */
-
-body.pages.tutorial {
-  overflow-y: hidden;
-}
-
-.fake_iframe {
-  overflow-x: hidden;
-}
-
-.fake_iframe img {
-  position: absolute;
-  left: 50%;
-  margin-left: -693px;
-}
-
 /* ========= Help Dialog =========== */
 
 #cboxLoadedContent {

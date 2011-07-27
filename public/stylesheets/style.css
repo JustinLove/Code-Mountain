@@ -7,7 +7,7 @@ body {
 .application .content {
   color: white;
   padding-left: 6em;
-  padding-right: 6em;
+  /*padding-right: 6em;*/
 }
 
 .marketing {

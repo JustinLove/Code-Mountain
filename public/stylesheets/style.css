@@ -387,7 +387,22 @@ body.pages.tutorial {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background-color: #31BA00;
+  background: #31BA00;
+	
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #44CC0E),
+    color-stop(0.58, #32BA00)
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #44CC0E 0%,
+    #32BA00 58%
+);
+
+	
   display: none;
   padding: 1em;
   text-align: center;

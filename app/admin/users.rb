@@ -1,8 +1,9 @@
 ActiveAdmin.register User do
   index do |f|
-    column :email do |user| 
-      link_to user.email, admin_user_path(user)
+    column :name do |user| 
+      link_to user.name, admin_user_path(user)
     end
+    column :email
     column :current_sign_in_at
     column :last_sign_in_at
     column :created_at
@@ -10,6 +11,7 @@ ActiveAdmin.register User do
 
   form do |f|
     f.inputs do
+      f.input :name
       f.input :email
       f.input :password
       f.input :password_confirmation

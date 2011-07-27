@@ -1,7 +1,7 @@
 #tutorial-header
   #main-header
     #logo_2
-      = link_to image_tag( '/images/codemt_logo.png'), root_path
+      = link_to image_tag( '/images/cm-logo-full.png'), root_path
     %nav
       %ul.header_links_2
         = link_to image_tag('leftbracket_red.png'), dashboard_path
@@ -13,6 +13,6 @@
       = image_tag('/images/ri_avatar.png')
     .msg
       Ri has responded to your message.
-      = link_to "Click Here to view", get_response_path, :class => 'response'
+      = link_to "Click Here to view.", get_response_path, :class => 'response'
 #tutorialbody
   %iframe{:src => fake_iframe_path}

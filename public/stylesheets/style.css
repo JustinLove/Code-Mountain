@@ -7,7 +7,7 @@ body {
 .application .content {
   color: white;
   padding-left: 6em;
-  padding-right: 6em;
+  /*padding-right: 6em;*/
 }
 
 .marketing {
@@ -33,7 +33,11 @@ body {
   top: 10px;
   right: 27px;
 }
-
+	
+	#logo img, #logo_2 img, #logo_2 a img {
+		height: 75px;
+	}
+	
 #logo_2 {
   position: absolute;
   top: 11px;
@@ -72,7 +76,7 @@ nav .profile-pic {
   display:inline;
   padding-right: 20px;
   vertical-align: top;
-  margin-top: -20px;
+  margin-top: -25px;
 }
 
 nav a img {
@@ -106,24 +110,45 @@ nav ul li a {
   color: black;
   margin-right: 24px;
   text-decoration: none;
-  text-shadow: 0 1px 2px #000000;
 }
 
 nav li a:hover {
-  color: #7DB1DD;
+  color: #791515;
   text-shadow: 0 1px 1px #000;
 }
 
 #main-header {
   width: 100%;
   height: 100px;
-  background: white;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.27, #F7F4F7),
+    color-stop(0.54, #FFFFFF)
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #F7F4F7 27%,
+    #FFFFFF 54%
+);
+
+box-shadow: 0 3px 8px #000000;
+-moz-box-shadow: 0 3px 8px #000000;
+-webkit-box-shadow: 0 3px 8px #000000;
+
+
   /*background: url('/images/header-bg.png') repeat-x;*/
 }
 
 logo img {
   position: relative;
   top: 10px;
+}
+
+.cl-30 {
+	font-size: 1px;
+	height: 30px;
 }
 
 
@@ -355,13 +380,28 @@ logo img {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background-color: #c2e8ff;
+  background: #31BA00;
+	
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #44CC0E),
+    color-stop(0.58, #32BA00)
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #44CC0E 0%,
+    #32BA00 58%
+);
+
+	
   display: none;
   padding: 1em;
   text-align: center;
-  border: 1px solid #5cc2ff;
-  border-top: 3px groove #ccc;
+  /*border: .5px solid #ffffff;*/
   z-index: 10000;
+border-bottom: 3px solid rgba(0,0,0, 0.5);
 }
 
 #help_response_message .img {
@@ -377,17 +417,31 @@ logo img {
 }
 
 #help_response_message .msg {
-  font-weight: bold;
-  display: inline; 
-  padding-left: 0.5em;
-  font-size: 1.2em;
+  	color: white;
+	display: inline;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	padding-left: 0.5em;
+	text-shadow: 0 1px 1px #316000;
 }
+
+	#help_response_message .msg a {
+		color: black;
+		font-size: 0.8em;
+		padding: 5px;
+		text-decoration: none;
+	}
+	
+		#help_response_message .msg a:hover {
+			color: #444444;
+		}
 
 
 #help_response .response_title {
   font-size: 2em;
   font-weight: bold;
-  background-color: #c2e8ff;
+  background-color: #31BA00;
   padding: 0.2em 0.3em;
 }
 
@@ -404,14 +458,16 @@ logo img {
 }
 
 #help_response .user_name {
-  display: inline;
-  vertical-align: top;
+  	color: white;
+	display: inline;
+	text-shadow: 0 1px 2px #000000;
+	vertical-align: top;
 }
 
 #help_response .response {
   padding: 1em;
   font-family: Courier, "Courier New", monospace;
-  border: 1px solid #c2e8ff;
+  border: 1px solid #31BA00;
 }
 
 #get_help {
@@ -466,4 +522,5 @@ logo img {
 #call_for_help .batman img {
   border: 0px;
   padding: 0 1em;
+  width: 500px;
 }

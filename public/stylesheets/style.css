@@ -259,11 +259,12 @@ logo img {
 
 #fake_dashboard {
   margin-top: 2em;
+  position: relative;
 }
 
 #avatar {
   position: absolute;
-  top: 520px;
+  top: 457px;
   left: 152px;
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -353,7 +354,7 @@ logo img {
 }
 
 #task_1 {
-  top: 275px;
+  top: 213px;
   left: 730px;
   position: absolute;
 }

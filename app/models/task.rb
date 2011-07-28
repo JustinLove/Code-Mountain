@@ -1,5 +1,6 @@
 class Task < ActiveRecord::Base
   belongs_to :lesson
+  belongs_to :user
 
   delegate :title, :to => :lesson
   delegate :detail, :to => :lesson

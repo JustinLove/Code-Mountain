@@ -39,7 +39,10 @@ class PagesController < ApplicationController
   
   def create_subscriber
     @subscriber = Subscriber.new(params[:subscriber])
-    @subscriber.save
-    redirect_to thank_you_url 
+    if @subscriber.save 
+      redirect_to thank_you_url 
+    else
+      render :landing 
+    end
   end
 end

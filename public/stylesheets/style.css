@@ -593,3 +593,13 @@ logo img {
   padding: 0 1em;
   width: 400px;
 }
+
+/* error messages on signup */
+.field_with_errors input{
+  border: 2px solid #f0f003;
+}
+
+.errors {
+  color: #fff;
+  padding: 0.5em;
+}

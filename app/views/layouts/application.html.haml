@@ -13,10 +13,10 @@
       =image_tag('/images/neal_03.png', :class => "profile-pic")
     
       %ul.header_links
-        %li= link_to "Profile", root_path
+        %li= render 'devise/menu/registration_items'
         %li= link_to "Dashboard", root_path
         %li= link_to "Messages", root_path
-        %li{:class => "last"}= link_to "Logout", root_path
+        %li= render 'devise/menu/login_items'
   .content
     %p.notice
       = notice

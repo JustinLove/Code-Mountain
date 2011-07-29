@@ -4,7 +4,9 @@ describe Task do
   describe 'instance methods' do
     Given!(:lesson1) {Factory(:lesson, :title => 'one', :detail => 'oneone')}
     Given!(:lesson2) {Factory(:lesson, :title => 'two', :detail => 'twotwo')}
-    subject {Task.new(:lesson => lesson1)}
+    Given!(:user) {Factory(:user)}
+    subject {Task.new(:lesson => lesson1, :user => user)}
+    it {should be_valid}
     its(:title) {should == lesson1.title}
     its(:detail) {should == lesson1.detail}
     its(:complete?) {should be_false}

@@ -8,7 +8,7 @@ class Lesson < ActiveRecord::Base
     end
   end
 
-  def task!
-    task || build_task
+  def task!(user)
+    task || build_task(:user => user)
   end
 end

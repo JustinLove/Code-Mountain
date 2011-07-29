@@ -7,7 +7,7 @@ describe TasksController do
   Given!(:user) {Factory(:user)}
   Given!(:lesson1) {Factory(:lesson, :title => 'one')}
   Given!(:lesson2) {Factory(:lesson, :title => 'two')}
-  Given!(:task1) {lesson1.create_task(:user => user)}
+  Given!(:task1) {lesson1.tasks.create(:user => user)}
 
   describe 'exposures' do
     Given {sign_in user}

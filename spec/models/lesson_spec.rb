@@ -27,11 +27,14 @@ describe Lesson do
     subject {Lesson}
 
     describe 'incomplete' do
-      subject {Lesson.incomplete}
-      it {p subject}
+      subject {Lesson.incomplete(user)}
       it {should have(2).items}
       its(:first) {should == lesson2}
       its(:last) {should == lesson3}
+    end
+    describe 'incomplete by user' do
+      subject {Lesson.incomplete(other_user)}
+      it {should have(3).items}
     end
   end
 
@@ -41,13 +44,13 @@ describe Lesson do
     it {should be}
 
     describe 'build tasks' do
-      subject {lesson.build_task}
+      subject {lesson.tasks.build}
       it {should be}
       it {should be_kind_of(Task)}
       its(:lesson) {should == lesson}
     end
     describe 'create tasks' do
-      subject {lesson.create_task(:user => user)}
+      subject {lesson.tasks.create(:user => user)}
       its(:id) {should be}
     end
 
@@ -59,13 +62,13 @@ describe Lesson do
         it {should_not be_complete}
       end
       describe 'incomplete task' do
-        Given {lesson.create_task(:user => user)}
+        Given {lesson.tasks.create(:user => user)}
         subject {lesson.task!(user)}
         it {should_not be_new_record}
         it {should_not be_complete}
       end
       describe 'complete task' do
-        Given {lesson.create_task(:user => user, :status => 'complete')}
+        Given {lesson.tasks.create(:user => user, :status => 'complete')}
         subject {lesson.task!(user)}
         it {should_not be_new_record}
         it {should be_complete}

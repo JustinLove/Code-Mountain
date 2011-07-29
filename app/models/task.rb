@@ -15,6 +15,6 @@ class Task < ActiveRecord::Base
   end
 
   def next
-    Lesson.find(lesson_id + 1).task!(user)
+    user.start(lesson.next)
   end
 end

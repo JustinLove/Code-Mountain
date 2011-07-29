@@ -53,26 +53,5 @@ describe Lesson do
       subject {lesson.tasks.create(:user => user)}
       its(:id) {should be}
     end
-
-    describe '#task!' do
-      Given(:lesson) {Factory(:lesson)}
-      describe 'no task' do
-        subject {lesson.task!(user)}
-        it {should be_new_record}
-        it {should_not be_complete}
-      end
-      describe 'incomplete task' do
-        Given {lesson.tasks.create(:user => user)}
-        subject {lesson.task!(user)}
-        it {should_not be_new_record}
-        it {should_not be_complete}
-      end
-      describe 'complete task' do
-        Given {lesson.tasks.create(:user => user, :status => 'complete')}
-        subject {lesson.task!(user)}
-        it {should_not be_new_record}
-        it {should be_complete}
-      end
-    end
   end
 end

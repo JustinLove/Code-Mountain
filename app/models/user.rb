@@ -10,4 +10,17 @@ class User < ActiveRecord::Base
 
   validates_presence_of :name
   validates_uniqueness_of :email, :case_sensitive => false
+
+  def next_task
+    start(Lesson.incomplete(self).first)
+  end
+
+  def start(lesson)
+    find_task(lesson) || tasks.build(:lesson => lesson)
+  end
+
+  private
+  def find_task(lesson)
+    tasks.where(:lesson_id => lesson.id).first
+  end
 end

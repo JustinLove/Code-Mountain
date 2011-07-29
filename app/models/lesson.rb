@@ -9,10 +9,10 @@ class Lesson < ActiveRecord::Base
   end
 
   def task(user)
-    Task.where(:lesson_id => id, :user_id => user.id).first
+    tasks.where(:user_id => user.id).first
   end
 
-  def task!(user)
-    task(user) || tasks.build(:user => user)
+  def next
+    Lesson.find(id + 1)
   end
 end

@@ -10,7 +10,8 @@
       #logo
         = link_to image_tag( '/images/cm-logo-full.png'), root_path
     %nav
-      =image_tag('/images/neal_03.png', :class => "profile-pic")
+      - if user_signed_in?
+        = gravatar_image_tag(current_user.email, :class => "profile-pic")
     
       %ul.header_links
         %li= render 'devise/menu/registration_items'

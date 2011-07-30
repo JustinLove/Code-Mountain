@@ -1,3 +1,7 @@
+$darkred: #8B0202;
+$buttonred: #9e3232;
+$palered: #B87676;
+
 body {
   background: #444444;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -64,13 +68,13 @@ h3 {
   position: absolute;
   left: 60px;
   top: 190px;
-  color: #730000;
-  background-color: #B87676;
+  color: $darkred;
+  background-color: $palered;
   padding: 10px 15px 0px 15px;
 
   h2 {
     margin-bottom: 10px;
-    color: #730000;
+    color: $darkred;
     font-size: 16pt;
   }
 
@@ -284,7 +288,7 @@ h3 {
   margin-right: 2em;
   text-align: center;
   color: white;
-  background-color: rgb(158, 50, 50);
+  background-color: $buttonred;
 }
 
 /* ======== Show Task (Outro) ====== */
@@ -303,7 +307,7 @@ h3 {
   padding-top: 1em;
 
   h3 {
-    background-color: #9e3232;
+    background-color: $buttonred;
     text-align: center;
     color: white;
   }
@@ -322,11 +326,15 @@ h3 {
     margin-right: 2em;
     text-align: center;
     color: white;
-    background-color: #9e3232;
+    background-color: $buttonred
   }
 }
 
 /* ======== Help message received styles ======== */
+
+$response_background: #31BA00;
+$response_start: #44CC0E;
+$response_stop: #32BA00;
 
 #help_response_message {
   position: absolute;
@@ -335,19 +343,19 @@ h3 {
   margin-left: 25%;
   margin-right: 25%;
   padding: 0.5em;
-  background: #31BA00;
+  background: $response_background;
   
   background-image: -webkit-gradient(
       linear,
       left bottom,
       left top,
-      color-stop(0, #44CC0E),
-      color-stop(0.58, #32BA00)
+      color-stop(0, $response_start),
+      color-stop(0.58, $response_stop)
   );
   background-image: -moz-linear-gradient(
       center bottom,
-      #44CC0E 0%,
-      #32BA00 58%
+      $response_start 0%,
+      $response_stop 58%
   );
   
   display: none;
@@ -375,7 +383,7 @@ h3 {
     font-weight: bold;
     letter-spacing: 0.5px;
     padding-left: 0.5em;
-    text-shadow: 0 1px 1px #316000;
+    text-shadow: 0 1px 1px darken($response_background, 20%);
 
     a {
       color: black;

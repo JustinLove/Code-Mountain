@@ -1,6 +1,5 @@
 #splash.container
   %img{:alt => "Welcome to Code Mountain", :src => "images/landing_page_3.png"}/
-  %meta{:content => "Flz45oEdK7QLsvgPrKGovRCp8H3bFyErjG5SRQ-Xr_E", :name => "google-site-verification"}/
   =form_for @subscriber, :url => { :action => "create_subscriber" }, :html => {:class => 'landing-form'} do |f|
     %h2 Are you ready to Climb?
     = f.label :name

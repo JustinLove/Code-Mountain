@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'decent_exposure'
 gem 'activeadmin'
 gem 'bluecloth', '>= 2.0.0'
+gem 'gravatar_image_tag'
 
 group :test do
   gem 'rspec'

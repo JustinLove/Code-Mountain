@@ -1,22 +1,32 @@
 !!! 5
 %html
   %head
-    %meta{:content => "Flz45oEdK7QLsvgPrKGovRCp8H3bFyErjG5SRQ-Xr_E", :name => "google-site-verification"}
     %title Code Mountain
     = render 'layouts/head'
+    = stylesheet_link_tag 'application'
 %body{:class => "application #{controller_name} #{action_name}"}
   #main-header
     .container
       #logo
         = link_to image_tag( '/images/cm-logo-full.png'), root_path
     %nav
-      =image_tag('/images/neal_03.png', :class => "profile-pic")
+      - if user_signed_in?
+        = gravatar_image_tag(current_user.email, :class => "profile-pic")
     
       %ul.header_links
-        %li= link_to "Profile", root_path
+        %li= render 'devise/menu/registration_items'
         %li= link_to "Dashboard", root_path
         %li= link_to "Messages", root_path
-        %li{:class => "last"}= link_to "Logout", root_path
+        %li= render 'devise/menu/login_items'
   .content
+    %p.notice
+      = notice
+    %p.alert
+      = alert
     = yield
   = render 'layouts/debug'
+  %script
+    setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName('script')[0];
+    a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/7165.js";
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);

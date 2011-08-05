@@ -1,5 +1,5 @@
 %li
-  = form_for lesson.task! do |f|
+  = form_for current_user.start(lesson) do |f|
     = f.hidden_field :lesson_id
     = f.submit f.object.title
     = f.object.status
